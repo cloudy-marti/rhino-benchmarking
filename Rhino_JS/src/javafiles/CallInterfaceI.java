@@ -1,7 +1,7 @@
 package javafiles;
 
-public static class CallInterfaceI {
+public class CallInterfaceI {
     public static void callMyInterface(I myInterface){
-        System.out.println(myInterface.new I.A(1));
+        System.out.println(new I.A(1));
     }
 }

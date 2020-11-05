@@ -1,11 +1,3 @@
-
-// Load the Benchmark file and its dependencies
-load('api/platform.js')
-load('api/lodash.js')
-load('api/benchmark.js')
-
-
-
 function time(ms) {
     return new Date(ms).toISOString().slice(11, -1);
 }
