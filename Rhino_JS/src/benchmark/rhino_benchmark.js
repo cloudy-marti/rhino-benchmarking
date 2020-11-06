@@ -11,7 +11,6 @@ function A(v) {
 }
 
 function B(v) {
-
     return {value: () => v};
 }
 
@@ -61,10 +60,11 @@ suite
     })
     .on("cycle", function (event) {
         print(String(event.target));
+        print(event.target.name + ' x ' + (event.target.stats.mean * 1000).toFixed(2) + ' msec (mean)');
     })
-    .on("complete", function () {
-        print("Test completed")
+.on("complete", function () {
+    print("Test completed")
         print('Fastest is ' + this.filter('fastest').map('name'));
     })
-    .run({'async': false});
+    .run({'async': true});
 
