@@ -1,12 +1,18 @@
 import java.util.Random;
 
-public class RhinoBenchMark2 {
-      private static final int[] INT_ARRAY = new Random(0)
-            .ints(1_000, 0, 100).toArray();
-      
-    static final I[] OBJ_ARRAY = new Random(0)
-            .ints(1_000, 0, 100)
-            .mapToObj(i -> i < 50? new A(i): new B(i)).toArray(I[]::new);
+public class RhinoBenchMark {
+    private static final int[] INT_ARRAY = new Random(0).ints(1_000, 0, 100).toArray();
+
+    static final I[] OBJ_ARRAY = new Random(0).ints(1_000, 0, 100).mapToObj(i -> i < 50 ? new A(i) : new B(i))
+            .toArray(I[]::new);
+
+    public static int[] getIntArray() {
+        return INT_ARRAY;
+    }
+
+    public static I[] getObjArray() {
+        return OBJ_ARRAY;
+    }
 
     public static int sum_int(int[] array) {
         var sum = 0;
