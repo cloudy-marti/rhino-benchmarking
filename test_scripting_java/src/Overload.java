@@ -9,7 +9,7 @@ public class Overload {
 
 	    public static void main(String[] args) {
 	        Overload o = new Overload();
-	        Object[] a = new Object[] { new Integer(3), "hi", Overload.class };
+	        Object[] a = new Object[] {3, "hi", Overload.class };
 	        for (int i = 0; i != a.length; ++i)
 	            System.out.println(o.f(a[i]));
 	    }

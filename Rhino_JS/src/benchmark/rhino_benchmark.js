@@ -14,7 +14,7 @@ function B(v) {
     return {value: () => v};
 }
 
-const ARRAY_SIZE = 1000000;
+const ARRAY_SIZE = 10000;
 const MAX_VALUE = 100;
 const TEST_NUMBER = 1000;
 
@@ -60,7 +60,7 @@ suite
     })
     .on("cycle", function (event) {
         print(String(event.target));
-        print(event.target.name + ' x ' + (event.target.stats.mean * 1000).toFixed(2) + ' msec (mean)');
+        print(event.target.name + ' x ' + (event.target.stats.mean * 1000).toFixed(2) + ' msec (mean time)');
     })
 .on("complete", function () {
     print("Test completed")
