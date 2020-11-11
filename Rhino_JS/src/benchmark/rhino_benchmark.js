@@ -14,7 +14,7 @@ function B(v) {
     return {value: () => v};
 }
 
-const ARRAY_SIZE = 10000;
+const ARRAY_SIZE = 1000000;
 const MAX_VALUE = 100;
 const TEST_NUMBER = 1000;
 
