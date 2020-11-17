@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72bac470-8aaf-4e93-93cc-2ace30eda720" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/benchmark/rhino_benchmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/benchmark/rhino_benchmark.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\Programmes\IntelliJ IDEA 2019.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1js9Y7fu76DJtZEveIxUILfUKKr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Rhino/rhino" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cloud\Desktop\INFO\INFO_VM_Rhino\Rhino_JS\src\benchmark" />
+      <recent name="C:\Users\cloud\Desktop\INFO\INFO_VM_Rhino\Rhino_JS\src\benchmark\api" />
+      <recent name="C:\Users\cloud\Desktop\INFO\INFO_VM_Rhino\Rhino_JS\src\benchmark_api" />
+      <recent name="C:\Users\cloud\Desktop\INFO\INFO_VM_Rhino\Rhino_JS\src\benchmark_tests" />
+      <recent name="C:\Users\cloud\Desktop\INFO\INFO_VM_Rhino\Rhino_JS\src\to_be_filtered" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72bac470-8aaf-4e93-93cc-2ace30eda720" name="Default Changelist" comment="" />
+      <created>1604581976266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604581976266</updated>
+      <workItem from="1604581977312" duration="16850000" />
+      <workItem from="1604651646335" duration="4170000" />
+      <workItem from="1604659444617" duration="2523000" />
+      <workItem from="1604667194920" duration="27000" />
+      <workItem from="1604751029962" duration="980000" />
+      <workItem from="1604757966187" duration="7495000" />
+      <workItem from="1604867091432" duration="14000" />
+      <workItem from="1604942217972" duration="2447000" />
+      <workItem from="1605003626638" duration="2336000" />
+      <workItem from="1605107269878" duration="73000" />
+      <workItem from="1605108178108" duration="601000" />
+      <workItem from="1605110464701" duration="348000" />
+      <workItem from="1605373499781" duration="3616000" />
+      <workItem from="1605509775665" duration="600000" />
+      <workItem from="1605534297367" duration="776000" />
+      <workItem from="1605535818169" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1210" y="275" key="FileChooserDialogImpl" timestamp="1605534363163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1210" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605534363163" />
+    <state x="922" y="168" key="SettingsEditor" timestamp="1605535275631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605535275631" />
+    <state x="1214" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1604608702556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1214" y="296" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604608702556" />
+  </component>
+</project>

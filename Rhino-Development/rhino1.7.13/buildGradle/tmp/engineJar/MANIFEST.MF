@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Version: 1.7.13
+Implementation-Title: Mozilla Rhino ScriptEngine
+Implementation-Vendor: Mozilla Foundation
+Implementation-URL: http://www.mozilla.org/rhino
+Built-Date: 2020-10-24
+Built-Time: 15:42:14
+

@@ -1,0 +1,95 @@
+Baseline
+LoopBenchmark.addLoop    avgt   10  4364.629 ± 278.302  ns/op
+LoopBenchmark.emptyLoop  avgt   10  1844.831 ± 222.863  ns/op
+
+Replace double constants with integers
+LoopBenchmark.addLoop    avgt   10  4117.234 ± 91.433  ns/op
+LoopBenchmark.emptyLoop  avgt   10  2052.714 ± 50.658  ns/op
+
+Remove bitfield testing from code path. This is getting annoying.
+LoopBenchmark.addLoop    avgt   10  4318.298 ± 175.068  ns/op
+LoopBenchmark.emptyLoop  avgt   10  2143.415 ±  25.361  ns/op
+
+Do the above in the appropriate place.
+LoopBenchmark.addLoop    avgt   10  4035.794 ± 64.773  ns/op
+LoopBenchmark.emptyLoop  avgt   10  2017.170 ± 20.154  ns/op
+
+Optimize increment code for Integer type.
+LoopBenchmark.addLoop    avgt   10  3965.677 ±  66.273  ns/op
+LoopBenchmark.emptyLoop  avgt   10  1844.240 ± 149.172  ns/op
+
+V8 benchmarks after:
+V8Benchmark.boyer          avgt    5  80743.273 ± 2028.008  us/op
+V8Benchmark.cryptoDecrypt  avgt    5  96486.072 ± 2155.507  us/op
+V8Benchmark.cryptoEncrpyt  avgt    5   6343.064 ±  226.205  us/op
+V8Benchmark.deltaBlue      avgt    5   6167.444 ±   95.659  us/op
+V8Benchmark.earley         avgt    5  19777.572 ±  148.735  us/op
+V8Benchmark.rayTrace       avgt    5  52281.841 ± 3118.398  us/op
+V8Benchmark.richards       avgt    5   2765.803 ±   36.709  us/op
+V8Benchmark.splay          avgt    5   2295.080 ±  737.135  us/op
+
+before:
+V8Benchmark.boyer          avgt    5   89328.343 ± 10179.986  us/op
+V8Benchmark.cryptoDecrypt  avgt    5  102963.568 ±  9143.967  us/op
+V8Benchmark.cryptoEncrpyt  avgt    5    6378.588 ±   176.075  us/op
+V8Benchmark.deltaBlue      avgt    5    6507.355 ±   559.816  us/op
+V8Benchmark.earley         avgt    5   19534.038 ±  1482.448  us/op
+V8Benchmark.rayTrace       avgt    5   53349.971 ±  2167.193  us/op
+V8Benchmark.richards       avgt    5    2840.020 ±    36.707  us/op
+V8Benchmark.splay          avgt    5    2206.247 ±   101.315  us/op
+
+
+*** Experiment 2: More interesting property access
+
+Baseline from master:
+PropertyBenchmark.propAccess  avgt   10  85658.794 ± 986.750  ns/op
+
+Use fast slots but not with Indy:
+A bit worse -- left it out.
+
+Use indy, but return a constant call site to the fast index:
+PropertyBenchmark.propAccess  avgt   10  88687.111 ± 5798.883  ns/op
+
+Use indy by checking only on the first operation and putting in a 
+permanent guard after that.
+PropertyBenchmark.propAccess  avgt   10  68776.374 ± 961.619  ns/op
+
+(27% faster)
+
+Use it only for properties with constant names, and make the property
+name be statically included in the CallSite
+PropertyBenchmark.propAccess  avgt   10  63712.994 ± 810.357  ns/op
+
+Use one method for all the testing rather than a guarded invocation
+PropertyBenchmark.propAccess  avgt   10  61644.419 ± 1715.340  ns/op
+
+
+
+
+
+*** Baseline: Benchmarks on work desktop
+
+JDK 11.0
+
+Master as of 6/25:
+V8Benchmark.boyer          avgt   25   97647.859 ± 800.955  us/op
+V8Benchmark.cryptoDecrypt  avgt   25  137160.788 ± 686.026  us/op
+V8Benchmark.cryptoEncrpyt  avgt   25    7479.749 ±  80.341  us/op
+V8Benchmark.deltaBlue      avgt   25    7549.867 ±  91.978  us/op
+V8Benchmark.earley         avgt   25   24956.047 ± 189.259  us/op
+V8Benchmark.rayTrace       avgt   25   64303.675 ± 363.024  us/op
+V8Benchmark.richards       avgt   25    3650.380 ±  52.534  us/op
+V8Benchmark.splay          avgt   25    2491.336 ±  91.544  us/op
+
+V8Benchmark.richards       avgt   25    3650.380 ±  52.534  us/op
+
+After first round of INDY optimizations
+V8Benchmark.boyer          avgt   25   90148.006 ± 2009.392  us/op
+V8Benchmark.cryptoDecrypt  avgt   25  133729.010 ± 1006.577  us/op
+V8Benchmark.cryptoEncrpyt  avgt   25    7436.433 ±   70.832  us/op
+V8Benchmark.deltaBlue      avgt   25    7535.570 ±   58.683  us/op
+V8Benchmark.earley         avgt   25   25681.391 ±  300.075  us/op
+V8Benchmark.rayTrace       avgt   25   61621.081 ±  297.029  us/op
+V8Benchmark.richards       avgt   25    3055.592 ±   25.371  us/op
+V8Benchmark.splay          avgt   25    3207.038 ±  134.963  us/op
+V8Benchmark.splay          avgt   25    2491.336 ±  91.544  us/op
